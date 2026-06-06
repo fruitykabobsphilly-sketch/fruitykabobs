@@ -36,7 +36,10 @@ Payment Options:
 Cash App: $kiglobal21
 Apple Pay: 267-973-6135
 
-Reminder: Delivery only. 2-day turnaround.`;
+Reminder:
+Delivery only.
+12 oz bottles.
+Please allow a 2-day turnaround.`;
 
   const encodedMessage = encodeURIComponent(message);
 
