@@ -1,110 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fruity Kabobs | Fresh Pressed Juice</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+<div class="payment-box">
 
-<header class="hero">
-  <img src="assets/logo.png" alt="Fruity Kabobs Logo" class="logo">
-  <h1>First Press Juice</h1>
-  <p>Fresh cold-pressed juice made to order.</p>
-  <p class="notice">Delivery only • 2-day turnaround • 12 oz bottles</p>
-</header>
+  <h3>Complete Your Order</h3>
 
-<section class="info">
-  <h2>Hours of Operation</h2>
-  <p>Monday, Wednesday, Thursday, Saturday & Sunday</p>
-  <p>8:00 AM – 7:00 PM</p>
-</section>
+  <p>
+    All juices are freshly prepared and made to order. Orders require a
+    2-day turnaround time and payment is required to reserve your order.
+  </p>
 
-<section class="packages">
-  <h2>Juice Packages</h2>
-  <div class="cards">
-    <div class="card">Single Bottle<br><strong>$9</strong></div>
-    <div class="card">3 Pack<br><strong>$26</strong></div>
-    <div class="card">5 Pack<br><strong>$38</strong></div>
-    <div class="card">10 Pack<br><strong>$50</strong></div>
-  </div>
-</section>
+  <div class="payment-methods">
 
-<section class="menu">
-  <h2>Signature Juices</h2>
+    <a class="pay-btn cashapp"
+       href="https://cash.app/$kiglobal21"
+       target="_blank">
+       Pay with Cash App
+    </a>
 
-  <div class="juice-card">
-    <h3>Green Goddess</h3>
-    <p>Kale, spinach, cucumber, green apple, lemon, ginger</p>
+    <div class="apple-pay-box">
+      <h4>Apple Pay</h4>
+      <p>267-973-6135</p>
+    </div>
+
   </div>
 
-  <div class="juice-card">
-    <h3>Tropic Drip</h3>
-    <p>Pineapple, mango, orange, lemon, ginger</p>
-  </div>
+  <p class="payment-note">
+    Please include your full name in the payment note. Once payment has
+    been received, your order will be scheduled for delivery.
+  </p>
 
-  <div class="juice-card">
-    <h3>Blood Cleanse</h3>
-    <p>Beet, carrot, apple, lemon, ginger</p>
-  </div>
-</section>
+  <p class="delivery-note">
+    Delivery Only • 12 oz Bottles • Fresh Pressed To Order
+  </p>
 
-<section class="order">
-  <h2>Build Your Order</h2>
-
-  <form id="orderForm">
-    <input type="text" id="name" placeholder="Full Name" required>
-    <input type="tel" id="phone" placeholder="Phone Number" required>
-    <input type="email" id="email" placeholder="Email">
-
-    <input type="text" id="address" placeholder="Delivery Address" required>
-    <input type="text" id="city" placeholder="City" required>
-    <input type="text" id="state" placeholder="State" required>
-    <input type="text" id="zip" placeholder="Zip Code" required>
-
-    <label>Select Package</label>
-    <select id="package" required>
-      <option value="">Choose Package</option>
-      <option value="Single Bottle - $9">Single Bottle - $9</option>
-      <option value="3 Pack - $26">3 Pack - $26</option>
-      <option value="5 Pack - $38">5 Pack - $38</option>
-      <option value="10 Pack - $50">10 Pack - $50</option>
-    </select>
-
-    <label>Choose Juice Type</label>
-    <select id="juiceType" required>
-      <option value="">Choose One</option>
-      <option value="Green Goddess">Green Goddess</option>
-      <option value="Tropic Drip">Tropic Drip</option>
-      <option value="Blood Cleanse">Blood Cleanse</option>
-      <option value="Build My Own Juice">Build My Own Juice</option>
-    </select>
-
-    <label>Build Your Own Juice</label>
-    <textarea id="customJuice" placeholder="Example: pineapple, mango, cucumber, ginger, lemon"></textarea>
-
-    <label>Fruits, Veggies & Add-ins</label>
-    <p class="ingredients">
-      Apple, pineapple, mango, orange, strawberry, watermelon, pear, grapes, lemon, lime,
-      celery, cucumber, carrot, beet, kale, spinach, ginger, turmeric, mint, basil
-    </p>
-
-    <label>Preferred Delivery Date</label>
-    <input type="date" id="date" required>
-
-    <textarea id="notes" placeholder="Extra notes, allergies, delivery instructions"></textarea>
-
-    <button type="submit">Submit Juice Order</button>
-  </form>
-
-  <p id="confirmation"></p>
-</section>
-
-<footer>
-  <p>Fruity Kabobs • Fresh pressed juice made to order</p>
-</footer>
-
-<script src="script.js"></script>
-</body>
-</html>
+</div>
