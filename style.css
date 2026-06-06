@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fffaf3;
+  color: #2f2f2f;
+}
+
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(#fff2d9, #ffffff);
+}
+
+.logo {
+  width: 140px;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 42px;
+  margin: 10px 0;
+  color: #e68a00;
+}
+
+h2 {
+  text-align: center;
+  color: #5f8f3f;
+}
+
+.notice {
+  font-weight: bold;
+  color: #d46a00;
+}
+
+.info, .packages, .menu, .order {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+}
+
+.card, .juice-card {
+  background: #f7ffe9;
+  padding: 20px;
+  border-radius: 14px;
+  text-align: center;
+  border: 1px solid #d8efc0;
+}
+
+.card strong {
+  font-size: 26px;
+  color: #e68a00;
+}
+
+.juice-card h3 {
+  color: #e68a00;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+input, select, textarea {
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+textarea {
+  min-height: 90px;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.ingredients {
+  background: #fff7e8;
+  padding: 15px;
+  border-radius: 10px;
+  line-height: 1.6;
+}
+
+button {
+  padding: 16px;
+  background: #5f8f3f;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #4f7c33;
+}
+
+#confirmation {
+  text-align: center;
+  font-weight: bold;
+  color: #5f8f3f;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #fff2d9;
+}
