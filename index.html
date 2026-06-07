@@ -3,208 +3,208 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fruity Kabobs | First Press Juice</title>
+
+  <title>FruityKabobs Juice Order Form</title>
   <link rel="stylesheet" href="style.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<header class="hero">
-  <nav class="nav">
-    <div class="brand">
-      <img src="assets/logo.png" alt="Fruity Kabobs Logo" class="logo">
-      <div>
-        <h2>Fruity Kabobs</h2>
-        <span>First Press Juice</span>
+  <header class="hero">
+    <img src="assets/logo.png" alt="FruityKabobs Logo" class="logo">
+
+    <h1>Fresh Pressed. Fresh. Cool. Price.</h1>
+    <h2>100% Natural Juice</h2>
+    <p>No sugar added. No shortcuts. Just real ingredients for a healthier you.</p>
+
+    <div class="health-icons">
+      <span>Boosts Immunity</span>
+      <span>Natural Energy</span>
+      <span>Supports Digestion</span>
+      <span>Healthy Glow</span>
+    </div>
+  </header>
+
+  <section class="notice">
+    <h2>Doorstep Delivery Only</h2>
+    <p><strong>Delivery Days:</strong> Wednesdays & Saturdays</p>
+    <p><strong>Order Deadline:</strong> Tuesday or Friday by 8 PM</p>
+    <p><strong>First Order Special:</strong> Buy 5, Get 1 Free!</p>
+  </section>
+
+  <main class="container">
+
+    <section class="card">
+      <h2>Choose Your Package</h2>
+
+      <div class="packages">
+        <label>
+          <input type="radio" name="package" value="Single - 1 bottle - 12 oz - $8" required>
+          <strong>Single</strong>
+          <span>1 bottle · 12 oz</span>
+          <b>$8</b>
+        </label>
+
+        <label>
+          <input type="radio" name="package" value="3-Pack - 3 bottles - 36 oz - $23">
+          <strong>3-Pack</strong>
+          <span>3 bottles · 36 oz</span>
+          <b>$23</b>
+        </label>
+
+        <label>
+          <input type="radio" name="package" value="5-Pack - 5 bottles - 60 oz - $37">
+          <strong>5-Pack</strong>
+          <span>5 bottles · 60 oz</span>
+          <b>$37</b>
+        </label>
+
+        <label>
+          <input type="radio" name="package" value="7-Pack - 7 bottles - 84 oz - $50">
+          <strong>7-Pack</strong>
+          <span>7 bottles · 84 oz</span>
+          <b>$50</b>
+        </label>
       </div>
-    </div>
+    </section>
 
-    <a href="#order" class="nav-btn">Order Now</a>
-  </nav>
+    <form action="YOUR_FORMSPREE_LINK_HERE" method="POST" class="order-form">
 
-  <div class="hero-content">
-    <p class="tagline">Fresh • Cold-Pressed • Made To Order</p>
-    <h1>First Press Juice Made Fresh For You</h1>
-    <p>
-      Handcrafted 12 oz juices made with fresh fruits, vegetables, herbs, and natural add-ins.
-      Choose a signature blend or build your own.
-    </p>
+      <section class="card">
+        <h2>Customer Information</h2>
 
-    <div class="hero-buttons">
-      <a href="#order" class="primary-btn">Start My Order</a>
-      <a href="#menu" class="secondary-btn">View Juices</a>
-    </div>
+        <input type="text" name="Customer Name" placeholder="Full Name" required>
+        <input type="tel" name="Phone Number" placeholder="Phone Number" required>
+        <input type="email" name="Email" placeholder="Email Address" required>
+        <input type="text" name="Delivery Address" placeholder="Apartment / Building / Door Number" required>
+        <input type="text" name="Instagram Handle" placeholder="Instagram Handle Optional">
+      </section>
 
-    <div class="quick-info">
-      <span>Delivery Only</span>
-      <span>2-Day Turnaround</span>
-      <span>12 oz Bottles</span>
-    </div>
-  </div>
-</header>
+      <section class="card">
+        <h2>Select Your Juice Flavors</h2>
+        <p class="small">All bottles are 12 oz.</p>
 
-<section class="info-section">
-  <div class="info-card">
-    <h3>Hours</h3>
-    <p>Monday, Wednesday, Thursday, Saturday & Sunday</p>
-    <strong>8:00 AM – 7:00 PM</strong>
-  </div>
+        <div class="menu-item">
+          <label>Blood Cleanse</label>
+          <p>Beet · Apple · Carrot · Lemon · Ginger</p>
+          <input type="number" name="Blood Cleanse Quantity" min="0" value="0">
+        </div>
 
-  <div class="info-card">
-    <h3>Delivery Only</h3>
-    <p>All orders require a full delivery address.</p>
-    <strong>No pickup available</strong>
-  </div>
+        <div class="menu-item">
+          <label>Green Tea Detox</label>
+          <p>Spinach · Cucumber · Celery · Apple · Lemon · Ginger</p>
+          <input type="number" name="Green Tea Detox Quantity" min="0" value="0">
+        </div>
 
-  <div class="info-card">
-    <h3>Made Fresh</h3>
-    <p>Juices are pressed fresh after your order is placed.</p>
-    <strong>Allow 2 days</strong>
-  </div>
-</section>
+        <div class="menu-item">
+          <label>Tropical Immunity</label>
+          <p>Pineapple · Orange · Mango · Turmeric · Lemon · Ginger</p>
+          <input type="number" name="Tropical Immunity Quantity" min="0" value="0">
+        </div>
 
-<section class="section" id="menu">
-  <p class="section-label">Signature Blends</p>
-  <h2>Fresh Juice Menu</h2>
+        <div class="menu-item">
+          <label>Sun Garden</label>
+          <p>Pineapple · Lemon · Ginger · Basil</p>
+          <input type="number" name="Sun Garden Quantity" min="0" value="0">
+        </div>
 
-  <div class="juice-grid">
-    <div class="juice-card">
-      <div class="juice-icon green"></div>
-      <h3>Green Goddess</h3>
-      <p>Kale, spinach, cucumber, green apple, lemon, and ginger.</p>
-    </div>
+        <div class="menu-item">
+          <label>Clean Slate</label>
+          <p>Celery · Apple · Pear</p>
+          <input type="number" name="Clean Slate Quantity" min="0" value="0">
+        </div>
 
-    <div class="juice-card">
-      <div class="juice-icon blue"></div>
-      <h3>Tropic Drip</h3>
-      <p>Pineapple, mango, orange, lemon, and ginger.</p>
-    </div>
+        <div class="menu-item">
+          <label>The Glow</label>
+          <p>Orange · Carrot · Turmeric</p>
+          <input type="number" name="The Glow Quantity" min="0" value="0">
+        </div>
 
-    <div class="juice-card">
-      <div class="juice-icon red"></div>
-      <h3>Blood Cleanse</h3>
-      <p>Beet, carrot, apple, lemon, and ginger.</p>
-    </div>
-  </div>
-</section>
+        <div class="menu-item">
+          <label>Citrus Kick</label>
+          <p>Grapefruit · Orange · Lemon · Ginger</p>
+          <input type="number" name="Citrus Kick Quantity" min="0" value="0">
+        </div>
 
-<section class="section pricing">
-  <p class="section-label">Pricing</p>
-  <h2>12 oz Bottle Packages</h2>
+        <div class="menu-item">
+          <label>Hydrate</label>
+          <p>Watermelon · Cucumber · Lime · Mint</p>
+          <input type="number" name="Hydrate Quantity" min="0" value="0">
+        </div>
+      </section>
 
-  <div class="price-grid">
-    <div class="price-card">
-      <h3>Single Bottle</h3>
-      <p>1 fresh 12 oz juice</p>
-      <strong>$9</strong>
-    </div>
+      <section class="card">
+        <h2>Create Your Own Juice</h2>
+        <p class="small">Pick your ingredients and we do the rest.</p>
 
-    <div class="price-card">
-      <h3>3 Pack</h3>
-      <p>Three 12 oz juices</p>
-      <strong>$26</strong>
-    </div>
+        <div class="checkbox-grid">
+          <label><input type="checkbox" name="Create Your Own Ingredients" value="Apple"> Apple</label>
+          <label><input type="checkbox" name="Create Your Own Ingredients" value="Pineapple"> Pineapple</label>
+          <label><input type="checkbox" name="Create Your Own Ingredients" value="Orange"> Orange</label>
+          <label><input type="checkbox" name="Create Your Own Ingredients" value="Lemon"> Lemon</label>
+          <label><input type="checkbox" name="Create Your Own Ingredients" value="Lime"> Lime</label>
+          <label><input type="checkbox" name="Create Your Own Ingredients" value="Pear"> Pear</label>
+          <label><input type="checkbox" name="Create Your Own Ingredients" value="Watermelon"> Watermelon</label>
+          <label><input type="checkbox" name="Create Your Own Ingredients" value="Mango"> Mango</label>
 
-    <div class="price-card">
-      <h3>5 Pack</h3>
-      <p>Five 12 oz juices</p>
-      <strong>$38</strong>
-    </div>
+          <label><input type="checkbox" name="Create Your Own Ingredients" value="Carrot"> Carrot</label>
+          <label><input type="checkbox" name="Create Your Own Ingredients" value="Celery"> Celery</label>
+          <label><input type="checkbox" name="Create Your Own Ingredients" value="Cucumber"> Cucumber</label>
+          <label><input type="checkbox" name="Create Your Own Ingredients" value="Spinach"> Spinach</label>
+          <label><input type="checkbox" name="Create Your Own Ingredients" value="Beet"> Beet</label>
 
-    <div class="price-card">
-      <h3>10 Pack</h3>
-      <p>Ten 12 oz juices</p>
-      <strong>$50</strong>
-    </div>
-  </div>
-</section>
+          <label><input type="checkbox" name="Create Your Own Ingredients" value="Ginger"> Ginger</label>
+          <label><input type="checkbox" name="Create Your Own Ingredients" value="Turmeric"> Turmeric</label>
+          <label><input type="checkbox" name="Create Your Own Ingredients" value="Mint"> Mint</label>
+          <label><input type="checkbox" name="Create Your Own Ingredients" value="Basil"> Basil</label>
+          <label><input type="checkbox" name="Create Your Own Ingredients" value="Chia Seeds"> Chia Seeds</label>
+          <label><input type="checkbox" name="Create Your Own Ingredients" value="Flax Seeds"> Flax Seeds</label>
+        </div>
 
-<section class="section ingredients">
-  <p class="section-label">Build Your Own</p>
-  <h2>Choose Your Fresh Ingredients</h2>
+        <textarea name="Create Your Own Notes" placeholder="Tell us how many custom juices you want and any flavor preferences."></textarea>
+      </section>
 
-  <p>
-    Apple, pineapple, mango, orange, strawberry, watermelon, pear, grapes,
-    lemon, lime, celery, cucumber, carrot, beet, kale, spinach, ginger,
-    turmeric, mint, and basil.
-  </p>
-</section>
+      <section class="card payment">
+        <h2>Payment Information</h2>
 
-<section class="section order-section" id="order">
-  <p class="section-label">Order Form</p>
-  <h2>Place Your Juice Order</h2>
+        <p><strong>Cash App:</strong> $Kiglobal21</p>
+        <p><strong>Apple Pay:</strong> Available upon request.</p>
 
-  <form id="orderForm">
+        <label class="payment-option">
+          <input type="radio" name="Payment Method" value="Cash App" required>
+          Cash App
+        </label>
 
-    <div class="form-row">
-      <input type="text" id="name" placeholder="Full Name" required>
-      <input type="tel" id="phone" placeholder="Phone Number" required>
-    </div>
+        <label class="payment-option">
+          <input type="radio" name="Payment Method" value="Apple Pay Link Needed">
+          Apple Pay Link Needed
+        </label>
 
-    <input type="email" id="email" placeholder="Email Address">
+        <p class="warning">
+          Payment must be completed within 1 hour of ordering or your order will be canceled.
+          If Apple Pay is needed, please select Apple Pay and a payment link will be sent.
+        </p>
+      </section>
 
-    <input type="text" id="address" placeholder="Delivery Address" required>
+      <section class="card">
+        <h2>Special Instructions</h2>
+        <textarea name="Special Instructions" placeholder="Add delivery notes, allergies, Apple Pay request, or special instructions here."></textarea>
+      </section>
 
-    <div class="form-row">
-      <input type="text" id="city" placeholder="City" required>
-      <input type="text" id="state" placeholder="State" required>
-      <input type="text" id="zip" placeholder="Zip Code" required>
-    </div>
+      <input type="hidden" name="_subject" value="New FruityKabobs Juice Order">
+      <input type="hidden" name="_next" value="https://fruitykabobsphilly-sketch.github.io/fruitykabobs/thank-you.html">
 
-    <select id="package" required>
-      <option value="">Select Package</option>
-      <option value="Single Bottle - $9">Single Bottle - $9</option>
-      <option value="3 Pack - $26">3 Pack - $26</option>
-      <option value="5 Pack - $38">5 Pack - $38</option>
-      <option value="10 Pack - $50">10 Pack - $50</option>
-    </select>
+      <button type="submit">Place My Juice Order</button>
 
-    <select id="juiceType" required>
-      <option value="">Choose Juice Type</option>
-      <option value="Green Goddess">Green Goddess</option>
-      <option value="Tropic Drip">Tropic Drip</option>
-      <option value="Blood Cleanse">Blood Cleanse</option>
-      <option value="Build My Own Juice">Build My Own Juice</option>
-    </select>
+    </form>
+  </main>
 
-    <textarea id="customJuice" placeholder="If building your own juice, list your fruits, veggies, herbs, and add-ins here."></textarea>
+  <footer>
+    <p>Text or Call: 267-258-7082</p>
+    <p>Drink Healthy. Live Happy. Stay Fruity.</p>
+  </footer>
 
-    <label>Preferred Delivery Date</label>
-    <input type="date" id="date" required>
-
-    <textarea id="notes" placeholder="Allergies, delivery notes, or special requests"></textarea>
-
-    <button type="submit">Send My Order By Text</button>
-  </form>
-
-  <div class="payment-box">
-    <h3>Complete Your Order</h3>
-
-    <p>
-      All juices are made fresh to order. Please allow a 2-day turnaround.
-      Payment is required to confirm your order and delivery date.
-    </p>
-
-    <a class="pay-btn cashapp" href="https://cash.app/$kiglobal21" target="_blank">
-      Pay With Cash App
-    </a>
-
-    <div class="apple-pay-box">
-      <h4>Apple Pay</h4>
-      <p>267-973-6135</p>
-    </div>
-
-    <p class="payment-note">
-      Please include your full name in the payment note so your order can be matched correctly.
-    </p>
-  </div>
-</section>
-
-<footer>
-  <h3>Fruity Kabobs</h3>
-  <p>Fresh first press juice made to order.</p>
-</footer>
-
-<script src="script.js"></script>
 </body>
 </html>
