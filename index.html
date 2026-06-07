@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>FruityKabobs Juice Order Form</title>
 
   <link rel="stylesheet" href="style.css" />
@@ -13,7 +14,7 @@
 <body>
 
   <header class="hero">
-    <img src="./assets/logo.png" alt="FruityKabobs Logo" class="logo">
+    <img src="assets/logo.png" alt="FruityKabobs Logo" class="logo">
 
     <h1>Fresh Pressed Juice Delivered To Your Door</h1>
     <h2>100% Natural • No Sugar Added</h2>
@@ -103,11 +104,11 @@
     <section class="card" id="order">
       <h2>Place Your Juice Order</h2>
 
-     <form action="https://formspree.io/f/mrevpwnj" method="POST">
+      <form action="https://formspree.io/f/mrevpwnj" method="POST">
 
         <input type="text" name="Customer Name" placeholder="Full Name" required>
         <input type="tel" name="Phone Number" placeholder="Phone Number" required>
-        <input type="email" name="Email" placeholder="Email Address" required>
+        <input type="email" name="email" placeholder="Email Address" required>
         <input type="text" name="Delivery Address" placeholder="Delivery Address / Apartment Number" required>
 
         <h3>Choose Your Package</h3>
@@ -177,7 +178,8 @@
         <textarea name="Special Instructions" placeholder="Add delivery notes, allergies, Apple Pay request, or special instructions here."></textarea>
 
         <input type="hidden" name="_subject" value="New FruityKabobs Juice Order">
-        <input type="hidden" name="_next" value="https://fruitykabobsphilly-sketch.github.io/fruitykabobs/thank-you.html">
+
+        <p class="small">After clicking submit, please wait a few seconds for your order to process.</p>
 
         <button type="submit">Submit My Order</button>
       </form>
